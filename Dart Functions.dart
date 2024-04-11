@@ -45,35 +45,41 @@ void main() {
   print('String Length: ${stringLength("Hello")}'); // Output: String Length: 5
   print('First Element: ${getFirstElement([1, 2, 3])}'); // Output: First Element: 1
 }
-function addTwo(double: any, a: any, double1: any, b: any) {
+Future<Function> addTwo(double = any, a = any, double1 = any, b = any) async {
   throw new Error("Function not implemented.");
 }
 
-function subtractTwo(double: any, a: any, double1: any, b: any) {
+mixin any {
+}
+
+Function subtractTwo(double = any, a = any, double1 = any, b = any) {
   throw new Error("Function not implemented.");
 }
 
-function multiplyTwo(double: any, a: any, double1: any, b: any) {
+Function multiplyTwo(double = any, a = any, double1 = any, b = any) {
   throw new Error("Function not implemented.");
 }
 
-function divideTwo(double: any, a: any, double1: any, b: any) {
+Function divideTwo(double = any, a = any, double1 = any, b = any) {
   throw new Error("Function not implemented.");
 }
 
-function ArgumentError(arg0: string) {
+Function ArgumentError(String s, arg0 = string) {
   throw new Error("Function not implemented.");
 }
 
-function stringLength(String: StringConstructor, str: any) {
+mixin string {
+}
+
+Function stringLength(String = StringConstructor, str = any) {
   throw new Error("Function not implemented.");
 }
 
-function getFirstElement(List: any, list: any) {
+Function getFirstElement(List = any, list = any) {
   throw new Error("Function not implemented.");
 }
 
-function main() {
+Function main() {
   throw new Error("Function not implemented.");
 }
 
